@@ -10,6 +10,9 @@ const options = [
   { value: 'films/', label: 'films' },
   { value: 'people/', label: 'people' },
   { value: 'planets/', label: 'planets' },
+  { value: 'spacies/', label: 'spacies' },
+  { value: 'vehicles/', label: 'vehicles' },
+  { value: 'starships/', label: 'starships' },
 ];
 
 export default class HomePage extends Component {
@@ -109,13 +112,6 @@ export default class HomePage extends Component {
           debounceTimeout={300}
           onChange={this.handleChangeInput}
         />
-        {/* <input
-          type="text"
-          autoComplete="off"
-          placeholder="Search ..."
-          value={query}
-          onChange={values => this.handleChangeInput(values)}
-        /> */}
         {select &&
           query !== '' &&
           search &&
